@@ -1,0 +1,22 @@
+{
+  "name": "backlogNoticeUser+",
+  "version": "0.0.7",
+  "manifest_version": 2,
+  "description": "backlogNoticeUser+",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.backlog.jp/view/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "embeded-script.js"
+  ],
+  "permissions": [
+    "<all_urls>"
+  ]
+}
