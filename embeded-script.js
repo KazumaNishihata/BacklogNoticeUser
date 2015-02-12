@@ -2,7 +2,7 @@ setTimeout(function(){
 
 var users = $("[name=notifiedUserIds]").eq(0).find("option"),
 	handler="<p class='label'><a href='#' style='font-weight:normal' data-js-toggle>AddUser+</a></p>",
-	html="<ul data-js-toggleTarget style='display:none;max-height:200px;overflow:scroll'>";
+	html="<ul data-js-toggleTarget style='display:none;max-height:200px;overflow:auto'>";
 
 users.each(function(){
 	html+="<li class='search-choice' style='width:33%;float:left;'><label><input type='checkbox' data-js-setUser='"+$(this).text()+"'><img src='"+$(this).attr("icon")+"' class='chosen-icon'>"+$(this).text()+"</label></li>";
